@@ -1,0 +1,90 @@
+/**** VAR ****/
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+/**** MAIN ****/
+body {
+  font-size: 16px; }
+
+.button {
+  padding: 10px;
+  background-color: antiquewhite; }
+
+/**** HEAD ****/
+header {
+  background-color: #4db169;
+  color: #fff; }
+  header h1 {
+    font-size: 72px;
+    text-transform: uppercase;
+    margin-top: 0; }
+  header h2 {
+    font-size: 50px;
+    margin-bottom: 0; }
+    header h2 span {
+      padding-right: 95px;
+      padding-bottom: 20px;
+      font-size: 80px;
+      background: url(img/logo.png) center right no-repeat; }
+
+.contacts {
+  outline: 1px solid red;
+  margin-top: 40px; }
+  .contacts h4 {
+    margin: 10px 0 10px; }
+
+.call_us {
+  margin: 10px 0; }
+
+/**** NAV ****/
+.navbar {
+  margin-bottom: 0;
+  background-color: #070000; }
+  .navbar a {
+    text-transform: uppercase; }
+  .navbar li {
+    padding: 5px; }
+  .navbar li:hover {
+    background-color: #00acdb; }
+
+.navbar-default {
+  border: 0;
+  box-shadow: none; }
+
+/**** MAIN *****/
+.port {
+  display: inline-block;
+  float: left;
+  padding: 0 50px 30px 0;
+  width: 50%; }
+  .port img {
+    width: 100%; }
+  .port p {
+    width: 70%; }
+
+.text {
+  text-align: justify; }
+
+/**** FOOTER ****/
+footer {
+  margin-top: 50px;
+  padding: 30px 0 25px;
+  background-color: #15515F;
+  color: #fff; }
+  footer table {
+    margin: 0 auto;
+    width: 100%; }
+  footer h2 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff; }
+
+/*# sourceMappingURL=style.css.map */

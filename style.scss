@@ -1,0 +1,108 @@
+/**** VAR ****/
+$mfont: 16px;
+$out: 1px solid red;
+$maincolor: #4db169;
+$secondcolor: #15515F;
+
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+/**** MAIN ****/
+body {
+    font-size: $mfont;
+}
+.button {
+    padding: 10px;
+    background-color: antiquewhite;
+}
+/**** HEAD ****/
+
+header {
+    background-color: $maincolor;
+    color: #fff;
+    h1 {
+        font-size: 72px;
+        text-transform: uppercase;
+        margin-top: 0;
+    }
+    h2 {
+        font-size: 50px;
+        margin-bottom: 0;
+        span {
+            padding-right: 95px;
+            padding-bottom: 20px;
+            font-size: 80px;
+            background: url(img/logo.png) center right no-repeat;
+        }
+    }
+}
+.contacts {
+    outline: $out;
+    margin-top: 40px;
+    h4 {
+        margin: 10px 0 10px; 
+    }
+}
+
+.call_us {
+    margin: 10px 0;
+}
+/**** NAV ****/
+.navbar {
+    margin-bottom: 0;
+    background-color: #070000;
+    a {
+        text-transform: uppercase;
+    }
+    li {
+        padding: 5px;
+    }
+    li:hover {
+        background-color: #00acdb;
+    }
+}
+.navbar-default {
+    border: 0;
+    box-shadow: none;
+}
+/**** MAIN *****/
+.port {
+    display: inline-block;
+    float: left;
+    padding: 0 50px 30px 0;
+    width: 50%;
+    img {
+        width: 100%;
+    }
+    p {
+        width: 70%;
+    }
+}
+.text {
+    text-align: justify;
+}
+/**** FOOTER ****/
+footer {
+    margin-top: 50px;
+    padding: 30px 0 25px;
+    background-color: $secondcolor;
+    color: #fff;
+    table {
+        margin: 0 auto;
+        width: 100%;
+    }
+    h2 {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #fff;
+    }
+}
