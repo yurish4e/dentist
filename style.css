@@ -13,7 +13,8 @@
 
 /**** MAIN ****/
 body {
-  font-size: 16px; }
+  font-size: 17px;
+  font-family: 'Lora', serif; }
 
 .button {
   padding: 10px;
@@ -61,6 +62,10 @@ header {
   box-shadow: none; }
 
 /**** MAIN *****/
+main h1 {
+  border-bottom: 1px solid black;
+  margin: 50px 0; }
+
 .port {
   display: inline-block;
   float: left;
