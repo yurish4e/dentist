@@ -3,7 +3,8 @@ $mfont: 17px;
 $out: 1px solid red;
 $maincolor: #4db169;
 $secondcolor: #15515F;
-
+$secondcolorlighter: #76B9C9; 
+$secondcolorlighter2: #8CBDC9; 
 
 .left {
     float: left;
@@ -23,8 +24,11 @@ body {
     font-family: 'Lora', serif;
 }
 .button {
-    padding: 10px;
-    background-color: antiquewhite;
+    padding: 10px 52px;
+    background-color: $secondcolor;
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: #fff;
 }
 /**** HEAD ****/
 
@@ -32,12 +36,13 @@ header {
     background-color: $maincolor;
     color: #fff;
     h1 {
-        font-size: 72px;
+        font-size: 69px;
         text-transform: uppercase;
         margin-top: 0;
     }
     h2 {
         font-size: 50px;
+        margin-top: 10px;
         margin-bottom: 0;
         span {
             padding-right: 95px;
@@ -48,28 +53,55 @@ header {
     }
 }
 .contacts {
-    outline: $out;
     margin-top: 40px;
     h4 {
-        margin: 10px 0 10px; 
+        margin: 10px 0 10px;
+    }
+    h4:nth-child(2) {
+        margin: 10px 0 20px; 
+        font-size: 29px;
     }
 }
 
 .call_us {
-    margin: 10px 0;
+    margin-top: 20px;
 }
 /**** NAV ****/
 .navbar {
     margin-bottom: 0;
-    background-color: #070000;
+    /*background-color: #070000;*/
+    background-color: $maincolor;
     a {
         text-transform: uppercase;
     }
-    li {
-        padding: 5px;
+    .current, .current:hover {
+        text-decoration: underline;
     }
     li:hover {
-        background-color: #00acdb;
+        background-color: $maincolor;
+        a:hover {color: #fff; }
+    }
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    a {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        margin: 0 2px;
+    }
+    a:nth-child(1){
+        background: url(img/social/fb.png) center no-repeat;
+    }
+    a:nth-child(2){
+        background: url(img/social/g.png) center no-repeat;
+    }
+    a:nth-child(3){
+        background: url(img/social/vk.png) center no-repeat;
     }
 }
 .navbar-default {
@@ -81,6 +113,7 @@ main {
     h1 {
         border-bottom: 1px solid black;
         margin: 50px 0;
+        text-transform: uppercase;
     }
 }
 .port {
@@ -98,10 +131,53 @@ main {
 .text {
     text-align: justify;
 }
+
+/**** PRICE ****/
+main {
+    table {
+        width: 100%;
+        font-size: 20px;
+        margin-bottom: 100px;
+    }
+    .td_bold {
+        padding-left: 20px;
+    }
+    td {
+        padding: 5px 50px;
+    }
+    td:nth-child(2) {
+        padding: 5px 20px;
+    }
+    tr:nth-child(1) {
+        text-transform: uppercase;
+        font-size: 25px;
+        td {
+        padding: 30px 20px 15px;
+    }
+    }
+    tr:nth-child(odd) {
+        background-color: lighten( $secondcolorlighter2, 10% );
+    }
+}  
+/**** ABOUT ****/
+.about {
+    img {
+        width: 100%;
+    }
+}
+/**** CONTACT ****/
+.contact {
+    img {
+        width: 100%;
+    }
+    b {
+        font-size: $mfont+2px;
+    }
+}
 /**** FOOTER ****/
 footer {
     margin-top: 50px;
-    padding: 30px 0 25px;
+    padding: 120px 0 60px;
     background-color: $secondcolor;
     color: #fff;
     table {
@@ -110,6 +186,7 @@ footer {
     }
     h2 {
         padding-bottom: 10px;
+        margin-top: 0;
         border-bottom: 1px solid #fff;
     }
 }
