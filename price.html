@@ -3,35 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Стоматологічна клініка</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="fa/css/font-awesome.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <meta name="Keywords" content="стоматологічні послуги, дантист, стоматолог красилів, ціни стоматолог, стоматологія">
+    <meta name="Description" content="Студія естетичної стоматології пропонує повний спектр стоматологічних послуг високої якості та за помірними цінами">
 </head>
 <body>
+   
     <div class="wrapper">
         <header>
             <div class="container">
                 <div class="left">
                     <h2>Студія<span></span> естетичної</h2>
                     <h1>стоматології</h1>
-                    
                 </div>
                 <div class="right contacts">
                    <h4>м. Красилів, вул. Булаєнка, 1</h4>
                     <h4>+38 097 90 80 194</h4>
-                    <a href="" class="call_us button">Написати нам</a>
+                    <a href="contact.html#call_us" class="call_us button">Написати нам</a>
                     <div class="social">
                         <a href=""></a>
                         <a href=""></a>
                         <a href=""></a>
                     </div>
-                    
                 </div>
             </div>
-           
         </header>
-         <nav role="navigation" class="container clearfix navbar navbar-default">
+        
+        <nav id="top" role="navigation" class="container clearfix navbar navbar-default">
                 <div class="navbar-header">
                     <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                 </div>
@@ -40,11 +44,12 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="index.html">Головна</a></li>
                         <li><a href="about.html">Про нас</a></li>
-                        <li><a href="price.html"  class="current">Ціни</a></li>
-                        <li><a href="contact.html" >Контакти</a></li>
+                        <li><a href="price.html" class="current">Ціни</a></li>
+                        <li><a href="contact.html">Контакти</a></li>
                     </ul>
                 </div>
             </nav>
+        
         <section id="slider">
           
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -60,7 +65,7 @@
                     </div>
                     <div class="item"> 
                        <img src="img/slide3-1900.jpg" alt="" class="big_slide">
-                       
+                        
                     </div>
                 </div>
                 <!-- Controls -->
@@ -91,15 +96,11 @@
                                <td>безкоштовно</td>
                            </tr>
                            <tr>
-                               <td class="td_bold">Анестезія:</td>
-                               <td></td>
-                           </tr>
-                           <tr>
-                               <td>- звичайна</td>
+                               <td class="td_bold">Анестезія</td>
                                <td>60 грн</td>
                            </tr>
                            <tr>
-                               <td>- ізоляція зуба Кофердамом</td>
+                               <td class="td_bold">ізоляція зуба Кофердамом</td>
                                <td>60 грн</td>
                            </tr>
                            <tr>
@@ -117,6 +118,10 @@
                            <tr>
                                <td>- естетична реставрація</td>
                                <td>280 - 900 грн</td>
+                           </tr>
+                           <tr>
+                               <td class="td_bold">Ремінеалізація зуба:</td>
+                               <td>250 грн</td>
                            </tr>
                            <tr>
                                <td class="td_bold">Пломбування каналу зуба:</td>
@@ -215,6 +220,10 @@
                                <td>100 грн</td>
                            </tr>
                            <tr>
+                               <td>- коронка МЗП 1 од.</td>
+                               <td>250 грн</td>
+                           </tr>
+                           <tr>
                                <td class="td_bold">Зняття мірки:</td>
                                <td></td>
                            </tr>
@@ -227,7 +236,7 @@
                                <td>100 - 200 грн</td>
                            </tr>
                            <tr>
-                               <td>Прикраса на зуби - СКАЙС</td>
+                               <td  class="td_bold">Прикраса на зуби - СКАЙС</td>
                                <td>150 - 200 грн</td>
                            </tr>
                            <tr>
@@ -259,7 +268,7 @@
                                <td>120 грн</td>
                            </tr>
                            <tr>
-                               <td class="td_bold">Лікування молочних зубів</td>
+                               <td class="td_bold">!!!!Жирним !!!!! Лікування молочних зубів</td>
                                <td></td>
                            </tr>
                            <tr>
@@ -312,7 +321,7 @@
                            </tr>
                            <tr>
                                <td class="td_bold">Кюретаж лунки видаленого зуба</td>
-                               <td>100-250 грн</td>
+                               <td>100 - 250 грн</td>
                            </tr>
                            
                        </table>
@@ -320,52 +329,71 @@
                     </div>
                 </div>
             </div></main>
+       
         <footer>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-4">
-                        <h2>ГРАФІК РОБОТИ</h2>
-                        <table>
+                        <h2><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp; ГРАФІК РОБОТИ</h2>
+                        <table class="timetable">
                             <tr>
                                 <td>Понеділок</td>
-                                <td>9:00 - 18:00</td>
+                                <td>9:00 - 18:15</td>
                             </tr>
                             <tr>
                                 <td>Вівторок</td>
-                                <td>9:00 - 18:00</td>
+                                <td>9:00 - 18:15</td>
                             </tr>
                             <tr>
                                 <td>Середа</td>
-                                 <td>9:00 - 18:00</td>
+                                <td>9:00 - 18:15</td>
                             </tr>
                             <tr>
                                 <td>Четвер</td>
-                                 <td>9:00 - 18:00</td>
+                                 <td>9:00 - 18:15</td>
                             </tr>
                             <tr>
                                 <td>П'ятниця</td>
-                                 <td>9:00 - 18:00</td>
+                                 <td>9:00 - 18:15</td>
                             </tr>
                             <tr>
                                 <td>Субота</td>
-                                 <td>9:00 - 15:00</td>
+                                 <td>9:00 - 18:15</td>
                             </tr>
                             <tr>
                                 <td>Неділя</td>
                                 <td>Вихідний</td>
                             </tr>
-                        </table>
+                        </table>    
                     </div>
+                    
                     <div class="col-lg-5 col-md-8">
-                        <h2>КОНТАКТИ</h2>
-                        <h1>+38 093 35 32 072</h1>
-                        <h3>м. Красилів, вул. Булаєнка, 1</h3>
-                        <h3>info@clinic.ua</h3>
+                        <h2><i class="fa fa-address-book" aria-hidden="true"></i>&nbsp; КОНТАКТИ</h2>
+                        <table class="contacttable">
+                            <tr>
+                                <td><i class="fa fa-phone" aria-hidden="true"></i></td>
+                                <td><h3 class="phone">&nbsp; +38 097 90 80 194</h3></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-map-marker" aria-hidden="true"></i></td>
+                                <td><h3>&nbsp; м. Красилів, вул. Булаєнка, 1</h3></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-envelope-o" aria-hidden="true"></i></td>
+                                <td><h3>&nbsp; info@dentist-abelchuk.com</h3></td>
+                            </tr>
+                        </table>
+                        <p class="licens"><i class="fa fa-heartbeat" aria-hidden="true"></i> Ліцензія МОЗ України №3034304293 від 29.03.2016 на проводження медичної практики.</p>
                     </div>
                     <div class="col-lg-4 col-md-12">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1291.549221081561!2d26.970430411054537!3d49.65244439129467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472e07e08e9055a7%3A0x38123a1f7b38f512!2z0LLRg9C70LjRhtGPINCR0YPQu9Cw0ZTQvdC60LAsIDEsINCa0YDQsNGB0LjQu9GW0LIsINCl0LzQtdC70YzQvdC40YbRjNC60LAg0L7QsdC70LDRgdGC0YwsIDMxMDAw!5e0!3m2!1sru!2sua!4v1492610696012" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
+                    
                 </div> 
+            </div>
+            <div class="copyright">
+                <p>dentist-abelchuk.com © 2017</p>
+                <a href="#top" class="toplink"><i class="fa fa-arrow-circle-o-up fa-2x" aria-hidden="true"></i></a>
             </div>
         </footer>
         

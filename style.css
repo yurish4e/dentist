@@ -66,6 +66,8 @@ header {
     text-transform: uppercase; }
   .navbar .current, .navbar .current:hover {
     text-decoration: underline; }
+  .navbar li {
+    transition: all 0.15s linear; }
   .navbar li:hover {
     background-color: #4db169; }
     .navbar li:hover a:hover {
@@ -97,9 +99,9 @@ header {
 
 /*slider*/
 #slider {
-  -webkit-box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.32);
-  -moz-box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.32);
-  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.32); }
+  -webkit-box-shadow: 0px 5px 10px -1px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px 5px 10px -1px rgba(0, 0, 0, 0.31);
+  box-shadow: 0px 5px 10px -1px rgba(0, 0, 0, 0.31); }
 
 /**** MAIN *****/
 main h1 {
@@ -161,14 +163,18 @@ form input {
   margin-bottom: 20px;
   border: 1px solid #999; }
 form button {
-  margin: 20px 0 30px; }
+  margin: 30px 0 30px;
+  transition: all 0.15s linear; }
 
 /**** FOOTER ****/
 footer {
   margin-top: 50px;
-  padding: 120px 0 60px;
+  z-index: 2;
+  padding: 120px 0 70px;
   background-color: #15515F;
   color: #fff; }
+  footer .fa {
+    color: #8CBDC9; }
   footer .timetable {
     margin-left: 10px;
     width: 100%;
@@ -181,9 +187,10 @@ footer {
     footer .timetable td:nth-child(1) {
       color: #76B9C9; }
   footer .contacttable h3 {
-    margin: 5px; }
+    margin: 5px 0 7px; }
   footer .contacttable .phone {
-    font-size: 25px; }
+    font-size: 25px;
+    margin: 0 0 4px; }
   footer .contacttable td:nth-child(1) {
     color: #76B9C9; }
   footer h2 {
@@ -193,5 +200,32 @@ footer {
   footer .licens {
     font-size: 13px;
     color: #76B9C9; }
+  footer .copyright {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    margin-top: 70px;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #76B9C9;
+    text-align: right; }
+    footer .copyright p {
+      color: #333; }
+  footer .toplink {
+    display: block;
+    position: absolute;
+    padding: 5px;
+    z-index: 50;
+    bottom: 15px;
+    right: 30px;
+    height: 35px;
+    width: 20px;
+    opacity: 0.5;
+    transition: all 0.2s linear; }
+    footer .toplink .fa {
+      color: #15515F; }
+  footer .toplink:hover {
+    opacity: 0.8; }
 
 /*# sourceMappingURL=style.css.map */
