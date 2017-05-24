@@ -26,7 +26,7 @@
                 <div class="right contacts">
                    <h4>м. Красилів, вул. Булаєнка, 1</h4>
                     <h4>+38 097 90 80 194</h4>
-                    <a href="contact.html#call_us" class="call_us button">Написати нам</a>
+                    <a href="contact.html#call_us" class="call_us button">Записатись на прийом</a>
                     <div class="social">
                         <a href=""></a>
                         <a href=""></a>
@@ -90,7 +90,7 @@
                     <!-- Hidden Required Fields -->
                     <input type="hidden" name="project_name" value="dentist-abelchuk.com">
                     <input type="hidden" name="admin_email" value="info@dentist-abelchuk.com">
-                    <input type="hidden" name="form_subject" value="Лист з сайту">
+                    <input type="hidden" name="form_subject" value="Заявка з сайту dentist-abelchuk.com">
                     <!-- END Hidden Required Fields -->
                     <input type="text" name="Name" placeholder="Ваше ім'я" required>
                     <br>
@@ -194,6 +194,28 @@
   integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
   crossorigin="anonymous"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
-  <script src="scripts/mail/script.js"></script>
+  <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+
+	//E-mail Ajax Send
+	$("form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail/mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Готово!");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
+});
+    </script>
 </body>
 </html>

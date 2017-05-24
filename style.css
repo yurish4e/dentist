@@ -17,12 +17,13 @@ body {
   font-family: 'Lora', serif; }
 
 .button {
-  padding: 12px 52px 10px;
+  padding: 12px 22px 10px;
   background-color: #15515F;
   border: 0;
   border-radius: 20px;
   text-transform: uppercase;
-  color: #fff; }
+  color: #fff;
+  font-size: 15px; }
 
 .button:hover {
   color: #d9d9e8;
@@ -129,6 +130,8 @@ main table {
   margin-bottom: 100px; }
 main .td_bold {
   padding-left: 20px; }
+main .td_header {
+  font-size: 21px; }
 main td {
   padding: 5px 50px; }
 main td:nth-child(2) {
