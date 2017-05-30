@@ -125,7 +125,8 @@ main h1 {
 
 /**** PRICE ****/
 main table {
-  width: 100%;
+  min-width: 320px;
+  max-width: 100%;
   font-size: 20px;
   margin-bottom: 100px; }
 main .td_bold {
@@ -207,7 +208,7 @@ footer {
     display: flex;
     position: absolute;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 40px;
     align-items: center;
     width: 100%;
     height: 60px;
@@ -230,5 +231,37 @@ footer {
       color: #15515F; }
   footer .toplink:hover {
     opacity: 0.8; }
+
+.footer_wrapper > div {
+  margin-bottom: 30px; }
+
+/* media */
+@media screen and (max-width: 1200px) {
+  header {
+    padding-bottom: 50px; }
+    header .left, header .right {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center; } }
+@media screen and (max-width: 768px) {
+  header h2 {
+    font-size: 45px; }
+  header h1 {
+    font-size: 63px; } }
+@media screen and (max-width: 576px) {
+  header h2 {
+    font-size: 20px; }
+  header h1 {
+    font-size: 35px; }
+
+  /*price*/
+  main table {
+    font-size: 16px; }
+  main td:nth-child(2) {
+    padding: 5px 5px; }
+  main tr:nth-child(1) {
+    font-size: 16px; }
+    main tr:nth-child(1) td {
+      padding: 30px 5px 15px; } }
 
 /*# sourceMappingURL=style.css.map */
